@@ -24,9 +24,20 @@ import { MatTooltipModule } from '@angular/material/tooltip';
 
 
 import { FormsModule } from '../../../node_modules/@angular/forms';
+import { PageNotFoundComponent } from './error/page-not-found/page-not-found.component';
+import { LanguageMenuComponent } from './language-menu/language-menu.component';
+import { LoadingDialogComponent } from './loading-dialog/loading-dialog.component';
+import { DrawrComponent } from './drawr/drawr.component';
+
+const components = [
+    PageNotFoundComponent,
+    LanguageMenuComponent,
+    LoadingDialogComponent,
+    DrawrComponent,
+];
 
 @NgModule({
-    declarations: [],
+    declarations: components,
     imports: [
         CommonModule,
         RouterModule,
@@ -51,10 +62,7 @@ import { FormsModule } from '../../../node_modules/@angular/forms';
         FormsModule
 
     ],
-    exports: [
-    ],
-    entryComponents: [
-
-    ]
+    exports: [ components ],
+    entryComponents: [ LoadingDialogComponent, ]
 })
 export class SharedModule { }
