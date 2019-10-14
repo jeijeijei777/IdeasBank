@@ -1,0 +1,19 @@
+<mat-toolbar color="primary" class="mat-elevation-z4 toolbar">
+  <mat-toolbar-row class="container">
+    <ng-container>
+      <button mat-icon-button (click)="onMenu()">
+        <mat-icon>menu</mat-icon>
+      </button>
+    </ng-container>
+    <!-- <ng-template #elseTemplate>
+      <img class="icon" src="assets/images/lcnem.svg" />
+    </ng-template> -->
+
+    <h1>{{ title }}</h1>
+    <span class="fill-remaining-space"></span>
+    <ng-container
+      ><!-- TODO: isLogin周りが汚いので要リファクタ --></ng-container
+    >
+    <app-language-menu></app-language-menu>
+  </mat-toolbar-row>
+</mat-toolbar>

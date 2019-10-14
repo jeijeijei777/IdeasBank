@@ -1,1 +1,18 @@
-<router-outlet></router-outlet> 
+<mat-drawer-container
+  ><mat-drawer #drawer class="mat-elevation-z16" (click)="drawer.toggle()">
+    <app-drawr></app-drawr>
+  </mat-drawer>
+  <mat-drawer-content class="mat-typography" id="mat-drawer-content">
+    <app-header (toggleMenu)="drawer.toggle()"></app-header>
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      xmlns:xlink="http://www.w3.org/1999/xlink"
+      viewBox="0 0 100 100"
+      preserveAspectRatio="none"
+      id="svg-bg"
+    >
+      <path d="M0,0 v60 L100,100 v-100 Z" fill="#fff" />
+    </svg>
+    <router-outlet></router-outlet>
+  </mat-drawer-content>
+</mat-drawer-container>

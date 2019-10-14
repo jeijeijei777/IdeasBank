@@ -8,13 +8,13 @@ import { LanguageService } from '../language/language.service';
 })
 export class LanguageMenuComponent implements OnInit {
 
-  constructor(private language: LanguageService) {}
-  
+  constructor(private language: LanguageService) { }
+
   public get lang() {
     return this.language.code;
   }
 
-  ngOnInit() {}
+  ngOnInit() { }
 
   public setLanguage(twoLetter: string) {
     this.language.code = twoLetter;

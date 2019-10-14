@@ -28,12 +28,14 @@ import { PageNotFoundComponent } from './error/page-not-found/page-not-found.com
 import { LanguageMenuComponent } from './language-menu/language-menu.component';
 import { LoadingDialogComponent } from './loading-dialog/loading-dialog.component';
 import { DrawrComponent } from './drawr/drawr.component';
+import { HeadSectionComponent } from './head-section/head-section.component';
 
 const components = [
     PageNotFoundComponent,
     LanguageMenuComponent,
     LoadingDialogComponent,
     DrawrComponent,
+    HeadSectionComponent,
 ];
 
 @NgModule({
@@ -62,7 +64,7 @@ const components = [
         FormsModule
 
     ],
-    exports: [ components ],
-    entryComponents: [ LoadingDialogComponent, ]
+    exports: [components],
+    entryComponents: [LoadingDialogComponent,]
 })
 export class SharedModule { }

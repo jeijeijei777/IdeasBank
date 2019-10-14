@@ -1,6 +1,49 @@
+<app-head-section [color]="'mat-primary'">
+  <mat-icon style="font-size: 48px;" [inline]="true">info</mat-icon>
+  <ng-container *ngIf="lang === 'en'">
+    <h3>What is Trust</h3>
+    <p>
+      Trust is a service that allows you to evaluate the competencies of others
+      on the blockchain and conduct various recruitment.
+    </p>
+    <p>
+      Recruitment is not limited to personnel; it can also be used to place and
+      accept business orders.
+    </p>
+    <br />
+    <p>
+      The competencies of others are evaluated between 0 ~ 1 and the cumulative
+      point is the individual's behavioral characteristics score.
+    </p>
+    <p>
+      In addition to the core competencies prepared from the beginning, it is
+      also possible to display unique behavioral characteristics by applying to
+      us.
+    </p>
+  </ng-container>
+  <ng-container *ngIf="lang === 'ja'">
+    <h3>IdeasBankとは</h3>
+    <p>
+      IdeasBankは、ブロックチェーン上で皆様のアイデアを安全に共有できるサービスです。
+    </p>
+    <p>
+      世界を変える独自のアイデアを、IdeasBankではいくつも見つけることが出来ます。
+    </p>
+    <br />
+    <p>
+      他者のアイデアを0〜1の間で評価し、その累計ポイントが個人のアイデアレベルになります。
+    </p>
+    <p>
+      良いアイデアを公表し、評価されるほどレベルアップします！レベルを上げて注目を浴び、投げ銭を沢山受け取りましょう
+    </p>
+  </ng-container>
+</app-head-section>
+
 <div style="text-align:center">
-  <h1>
-    {{ translation.title[lang] }}!
-  </h1>
-  <img width="300" alt="Angular Logo" src="/assets/picture/XHlD9JgKQRSpHTw3bsuzMQ_thumb_313.jpg">
+  <h1>{{ translation.title[lang] }}!</h1>
+  <img
+    width="300"
+    alt="Angular Logo"
+    src="/assets/picture/XHlD9JgKQRSpHTw3bsuzMQ_thumb_313.jpg"
+  />
 </div>
