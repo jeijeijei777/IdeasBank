@@ -14,7 +14,7 @@ export class HeaderComponent implements OnInit {
 
 
   isLogin$!: Observable<boolean>;
-  title = 'LCNEM Wallet';
+  title = 'IdeasBank';
 
   constructor(
   ) { }
@@ -22,7 +22,7 @@ export class HeaderComponent implements OnInit {
   ngOnInit() {
   }
 
-  private onMenu() {
+  onMenu() {
     this.toggleMenu.emit();
   }
 }
