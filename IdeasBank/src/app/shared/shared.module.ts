@@ -62,7 +62,7 @@ const components = [
         FormsModule
 
     ],
-    exports: [ components ],
-    entryComponents: [ LoadingDialogComponent, ]
+    exports: [components],
+    entryComponents: [LoadingDialogComponent,]
 })
 export class SharedModule { }
